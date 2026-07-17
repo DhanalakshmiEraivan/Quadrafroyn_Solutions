@@ -1,0 +1,2441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quadra Froyn Solutions and Technologies — Innovating Today. Empowering Tomorrow.</title>
+<meta name="description" content="Quadra Froyn Solutions and Technologies — AI-powered applications, data analytics, custom software, modern websites, and student training programs based in Srivilliputhur, Tamil Nadu." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+<style>
+/* =========================================================
+   QUADRA FROYN · PORTFOLIO PAGE
+   Editorial White Theme — derived from primary brand system
+   Palette: blue / green / violet / orange
+   ========================================================= */
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f5f2ea;
+  --bg-soft-2: #efebe1;
+  --paper: #ffffff;
+  --paper-2: #faf7f0;
+  --ink: #0a0a0a;
+  --ink-2: #1a1a1a;
+  --ink-soft: rgba(10,10,10,0.62);
+  --ink-mute: rgba(10,10,10,0.42);
+  --ink-faint: rgba(10,10,10,0.18);
+  --line: rgba(10,10,10,0.10);
+  --line-soft: rgba(10,10,10,0.06);
+
+  --blue: #1e3aff;
+  --blue-soft: #4d63ff;
+  --blue-tint: #eef0ff;
+  --green: #00b87a;
+  --green-soft: #2dd4a6;
+  --green-tint: #e6f7f0;
+  --violet: #7c3aed;
+  --violet-soft: #a78bfa;
+  --violet-tint: #f1eafe;
+  --orange: #ff5a1f;
+  --orange-soft: #ff8a5c;
+  --orange-tint: #fff0ea;
+
+  --grad-1: linear-gradient(135deg, #1e3aff 0%, #7c3aed 50%, #ff5a1f 100%);
+  --grad-2: linear-gradient(135deg, #00b87a 0%, #1e3aff 100%);
+  --grad-3: linear-gradient(135deg, #7c3aed 0%, #ff5a1f 100%);
+  --grad-4: linear-gradient(135deg, #1e3aff 0%, #00b87a 50%, #ff5a1f 100%);
+  --grad-mesh: radial-gradient(at 20% 20%, rgba(30,58,255,0.10) 0px, transparent 50%),
+               radial-gradient(at 80% 0%, rgba(124,58,237,0.10) 0px, transparent 50%),
+               radial-gradient(at 0% 80%, rgba(0,184,122,0.10) 0px, transparent 50%),
+               radial-gradient(at 80% 80%, rgba(255,90,31,0.10) 0px, transparent 50%);
+
+  --ease-quiet: cubic-bezier(.22, 1, .36, 1);
+  --ease-precise: cubic-bezier(.4, 0, .2, 1);
+  --ease-emphasis: cubic-bezier(.16, 1, .3, 1);
+
+  --max: 1440px;
+  --max-wide: 1600px;
+  --max-narrow: 860px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: auto; }
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.55;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none;
+}
+@media (max-width: 900px) { body { cursor: auto; } }
+ 
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: none; border: none; background: none; color: inherit; }
+@media (max-width: 900px) { button { cursor: pointer; } }
+
+::selection { background: var(--ink); color: var(--bg); }
+
+/* ===================== TYPOGRAPHY ===================== */
+.serif { font-family: 'Instrument Serif', serif; font-weight: 400; letter-spacing: -0.01em; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+   
+}
+
+.logo-img{
+    width: 30px;      /* Change as needed */
+    height: 30px;
+    object-fit: contain;
+     
+
+}
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.eyebrow::before {
+  content: '';
+  width: 15px;
+  height: 1px;
+  background: var(--ink);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+  color: var(--ink);
+}
+
+.h-display {
+  font-size: clamp(56px, 9vw, 148px);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  font-weight: 500;
+}
+.h-section {
+  font-size: clamp(40px, 5.6vw, 84px);
+  line-height: 0.96;
+  letter-spacing: -0.035em;
+}
+.h-sub {
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.lead {
+  font-size: clamp(17px, 1.25vw, 21px);
+  line-height: 1.55;
+  color: var(--ink-soft);
+  font-weight: 400;
+  max-width: 50ch;
+}
+
+.grad-text {
+  background: var(--grad-4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.serif-italic {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* ===================== LAYOUT ===================== */
+.container { max-width: var(--max); margin: 0 auto; padding: 0 40px; }
+.container-wide { max-width: var(--max-wide); margin: 0 auto; padding: 0 40px; }
+.container-narrow { max-width: var(--max-narrow); margin: 0 auto; padding: 0 40px; }
+@media (max-width: 768px) {
+  .container, .container-wide, .container-narrow { padding: 0 20px; }
+}
+
+section { position: relative; padding: 8rem 0; }
+@media (max-width: 768px) { section { padding: 5rem 0; } }
+
+.divider { height: 1px; background: var(--line); width: 100%; }
+
+/* ===================== CURSOR ===================== */
+.cursor-dot, .cursor-ring {
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  color:#1a1a1a;
+} 
+.cursor-dot {
+  width: 6px; height: 6px;
+  background: var(--ink);
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  color: #ff8a5c;
+}
+.cursor-ring {
+  width: 36px; height: 36px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  mix-blend-mode: difference;
+}
+.cursor-ring.hover { width: 70px; height: 70px; background: rgb(164, 108, 108); }
+.cursor-ring.text { width: 2px; height: 28px; border-radius: 1px; background: var(--ink); border: none; }
+@media (max-width: 900px) { .cursor-dot, .cursor-ring { display: none; } }
+
+/* ===================== PRELOADER ===================== */
+.preloader {
+  position: fixed; inset: 0;
+  background: var(--ink);
+  color: var(--bg);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  transition: opacity 0.6s, visibility 0.6s;
+}
+.preloader.done { opacity: 0; visibility: hidden; }
+.preloader-mark {
+  width: 80px; height: 80px;
+  border: 1.5px solid var(--bg);
+  position: relative;
+  animation: preloaderSpin 2s var(--ease-quiet) infinite;
+}
+.preloader-mark::before, .preloader-mark::after {
+  content: ''; position: absolute;
+  inset: 12px;
+  border: 1.5px solid var(--bg);
+  animation: preloaderSpin 3s var(--ease-quiet) infinite reverse;
+}
+.preloader-mark::after { inset: 24px; animation-duration: 1.5s; }
+@keyframes preloaderSpin {
+  0% { transform: rotate(0deg); border-radius: 0; }
+  50% { transform: rotate(180deg); border-radius: 50%; }
+  100% { transform: rotate(360deg); border-radius: 0; }
+}
+.preloader-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.preloader-bar {
+  width: 200px; height: 1px;
+  background: rgba(255,255,255,0.2);
+  overflow: hidden;
+}
+.preloader-bar::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--bg);
+  animation: preloaderProgress 2.4s var(--ease-quiet) forwards;
+}
+@keyframes preloaderProgress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* ===================== NAV ===================== */
+/* ===================== NAV ===================== */
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-logo-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.15;
+}
+
+.nav-logo-text span:first-child{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-logo-text span:last-child{
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #666;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    padding: 0 30px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+    display:block;
+}
+
+/* ===================== HERO ===================== */
+.hero {
+  min-height: 100vh;
+  padding: 160px 0 80px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--grad-mesh);
+  opacity: 0.8;
+  pointer-events: none;
+}
+.hero > .container-wide { position: relative; z-index: 1; }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+.hero-content { position: relative; z-index: 2; }
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.hero-meta-item {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  display: flex; align-items: center; gap: 8px;
+}
+.hero-meta-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green);
+  position: relative;
+}
+.hero-meta-dot::after {
+  content: '';
+  position: absolute; inset: -4px;
+  border-radius: 50%;
+  background: var(--green);
+  opacity: 0.3;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.4); opacity: 0; }
+}
+
+.hero-title {
+  margin-bottom: 40px;
+}
+.hero-title-line {
+  display: block;
+  overflow: hidden;
+}
+.hero-title-line span {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 1.2s var(--ease-emphasis);
+}
+.hero-title-line.in span { transform: translateY(0); }
+
+.hero-desc {
+  max-width: 520px;
+  margin-bottom: 48px;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 18px 32px;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 100px;
+  transition: transform 0.4s var(--ease-quiet), background 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--grad-1);
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: 0;
+}
+.btn-primary:hover::before { opacity: 1; }
+.btn-primary span, .btn-primary i { position: relative; z-index: 1; }
+.btn-primary:hover { transform: translateY(-3px); }
+
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 18px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  border: 1px solid var(--ink-faint);
+  border-radius: 100px;
+  transition: border-color 0.4s, background 0.4s;
+}
+.btn-secondary:hover { border-color: var(--ink); background: var(--paper-2); }
+
+.btn-arrow {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--bg);
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  font-size: 11px;
+  transition: transform 0.4s var(--ease-quiet);
+}
+.btn-secondary:hover .btn-arrow { transform: rotate(-45deg); }
+
+.hero-visual {
+  position: relative;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+#hero-canvas {
+  width: 100%; height: 100%;
+  display: block;
+}
+.hero-visual-frame {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border: 1px solid var(--line);
+}
+.hero-visual-frame::before,
+.hero-visual-frame::after,
+.hero-visual-frame .corner {
+  content: '';
+  position: absolute;
+  width: 24px; height: 24px;
+  border: 1px solid var(--ink);
+}
+.hero-visual-frame::before { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+.hero-visual-frame::after { top: -1px; right: -1px; border-left: none; border-bottom: none; }
+.hero-visual-frame .corner.bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
+.hero-visual-frame .corner.br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+.hero-label {
+  position: absolute;
+  bottom: -28px; left: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding-top: 80px;
+  margin-top: 100px;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 768px) {
+  .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+}
+.hero-stat-num {
+  font-size: clamp(40px, 4.4vw, 64px);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.hero-stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/* ===================== MARQUEE ===================== */
+.marquee {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 28px 0;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-track {
+  display: flex;
+  gap: 60px;
+  white-space: nowrap;
+  animation: marqueeMove 40s linear infinite;
+  font-family: 'Instrument Serif', serif;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+}
+.marquee-item {
+  display: inline-flex; align-items: center; gap: 60px;
+}
+.marquee-item::after {
+  content: '✦';
+  font-size: 16px;
+  opacity: 0.5;
+}
+.marquee-track:hover { animation-play-state: paused; }
+@keyframes marqueeMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ===================== SECTION HEAD ===================== */
+.section-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 80px;
+  align-items: end;
+}
+@media (max-width: 900px) {
+  .section-head { grid-template-columns: 1fr; gap: 30px; }
+}
+.section-head-title { max-width: 16ch; }
+.section-head-aside { display: flex; flex-direction: column; gap: 24px; align-items: flex-start; }
+.section-head-index {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+}
+
+
+/* ===================== MANIFESTO / ABOUT ===================== */
+.manifesto { padding: 12rem 0; }
+.manifesto-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 1024px) {
+  .manifesto-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+.manifesto-aside { position: sticky; top: 100px; }
+.manifesto-text {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(28px, 3.4vw, 52px);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+}
+.manifesto-text .reveal-word {
+  display: inline-block;
+  opacity: 0.15;
+  transition: opacity 0.6s;
+}
+.manifesto-text .reveal-word.lit { opacity: 1; }
+.manifesto-text em { font-style: italic; color: var(--blue); }
+.manifesto-text .accent-violet { color: var(--violet); font-style: italic; }
+.manifesto-text .accent-green { color: var(--green); font-style: italic; }
+.manifesto-text .accent-orange { color: var(--orange); font-style: italic; }
+
+.manifesto-foot {
+  margin-top: 60px;
+  display: flex; gap: 40px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.manifesto-signature {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--ink-soft);
+}
+.manifesto-signature small {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+/* ===================== DOMAINS / SERVICES ===================== */
+.domains { background: var(--bg); }
+.domains-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid var(--line);
+}
+@media (max-width: 1024px) { .domains-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 700px) { .domains-grid { grid-template-columns: 1fr; } }
+
+.domain-card {
+  padding: 50px 40px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  transition: background 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+}
+.domain-card:nth-child(3n) { border-right: none; }
+.domain-card:nth-last-child(-n+3) { border-bottom: none; }
+@media (max-width: 1024px) {
+  .domain-card:nth-child(3n) { border-right: 1px solid var(--line); }
+  .domain-card:nth-child(2n) { border-right: none; }
+}
+@media (max-width: 700px) {
+  .domain-card:nth-child(2n) { border-right: 1px solid var(--line); }
+  .domain-card:last-child { border-right: none; }
+  .domain-card:nth-last-child(-n+1) { border-bottom: none; }
+}
+.domain-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--grad-1);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s var(--ease-quiet);
+}
+.domain-card:hover::before { transform: scaleX(1); }
+.domain-card:hover { background: var(--paper-2); }
+
+.domain-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--ink-mute);
+  margin-bottom: 30px;
+}
+.domain-icon {
+  width: 56px; height: 56px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: var(--blue);
+  background: var(--blue-tint);
+  border-radius: 12px;
+  transition: transform 0.5s var(--ease-quiet), color 0.4s, background 0.4s;
+}
+.domain-card:hover .domain-icon {
+  transform: rotate(-10deg) scale(1.1);
+  color: var(--bg);
+  background: var(--ink);
+}
+.domain-title {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+.domain-desc {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin-bottom: 24px;
+  flex: 1;
+}
+.domain-meta {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.domain-meta-item {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+}
+.domain-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  transition: gap 0.4s;
+}
+.domain-card:hover .domain-cta { gap: 14px; }
+
+/* ===================== WHAT WE DO ===================== */
+.whatwedo { background: var(--bg-soft); }
+.whatwedo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+@media (max-width: 768px) { .whatwedo-grid { grid-template-columns: 1fr; } }
+
+.whatwedo-item {
+  padding: 36px 40px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 20px;
+  align-items: start;
+  transition: background 0.4s;
+}
+.whatwedo-item:nth-child(2n) { border-right: none; }
+.whatwedo-item:nth-last-child(-n+2) { border-bottom: none; }
+@media (max-width: 768px) {
+  .whatwedo-item:nth-child(2n) { border-right: 1px solid var(--line); }
+  .whatwedo-item:last-child { border-right: none; }
+  .whatwedo-item:nth-last-child(-n+1) { border-bottom: none; }
+}
+.whatwedo-item:hover { background: var(--paper-2); }
+.whatwedo-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--ink-mute);
+  padding-top: 3px;
+}
+.whatwedo-text {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+/* ===================== WHY CHOOSE US ===================== */
+.whyus { background: var(--bg); }
+.whyus-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 1px solid var(--line);
+}
+@media (max-width: 1024px) { .whyus-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .whyus-grid { grid-template-columns: 1fr; } }
+
+.whyus-card {
+  padding: 50px 36px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  transition: background 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+.whyus-card:nth-child(4n) { border-right: none; }
+.whyus-card:nth-last-child(-n+4) { border-bottom: none; }
+@media (max-width: 1024px) {
+  .whyus-card:nth-child(4n) { border-right: 1px solid var(--line); }
+  .whyus-card:nth-child(2n) { border-right: none; }
+}
+@media (max-width: 600px) {
+  .whyus-card:nth-child(2n) { border-right: 1px solid var(--line); }
+  .whyus-card:last-child { border-right: none; }
+  .whyus-card:nth-last-child(-n+1) { border-bottom: none; }
+}
+.whyus-card:hover { background: var(--paper-2); }
+.whyus-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--grad-2);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s var(--ease-quiet);
+}
+.whyus-card:hover::before { transform: scaleX(1); }
+.whyus-icon {
+  width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: var(--green);
+  background: var(--green-tint);
+  border-radius: 12px;
+  transition: transform 0.5s var(--ease-quiet), color 0.4s, background 0.4s;
+}
+.whyus-card:hover .whyus-icon {
+  transform: rotate(-10deg) scale(1.1);
+  color: var(--bg);
+  background: var(--ink);
+}
+.whyus-title {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+/* ===================== INTERNSHIP & TRAINING ===================== */
+.internship-section { background: var(--bg-soft); }
+.internship-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 1024px) { .internship-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+.internship-aside {
+  position: sticky;
+  top: 100px;
+}
+.internship-aside h2 { margin-bottom: 30px; }
+.internship-list {
+  display: flex; flex-direction: column; gap: 0;
+  margin-top: 40px;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: none;
+}
+.internship-list-item {
+  padding: 28px 30px;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 20px;
+  align-items: start;
+  transition: background 0.4s;
+}
+.internship-list-item:last-child { border-bottom: none; }
+.internship-list-item:hover { background: var(--paper-2); }
+.internship-list-icon {
+  width: 40px; height: 40px;
+  border-radius: 8px;
+  background: var(--violet-tint);
+  color: var(--violet);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+}
+.internship-list-title {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  margin-bottom: 4px;
+}
+.internship-list-desc {
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.internship-highlight {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 60px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 768px) { .internship-highlight { padding: 30px; } }
+.internship-highlight::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 4px;
+  background: var(--grad-3);
+}
+.internship-highlight-quote {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(24px, 2.8vw, 38px);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin-bottom: 30px;
+}
+.internship-highlight-quote em { color: var(--violet); font-style: italic; }
+.internship-highlight-desc {
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  max-width: 50ch;
+  margin-bottom: 36px;
+}
+.internship-tags {
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.internship-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  transition: border-color 0.3s, background 0.3s;
+}
+.internship-tag:hover { border-color: var(--ink); background: var(--bg-soft); }
+
+/* ===================== PORTFOLIO SHOWCASE ===================== */
+.portfolio-section { background: var(--bg); }
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid var(--line);
+}
+@media (max-width: 1024px) { .portfolio-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .portfolio-grid { grid-template-columns: 1fr; } }
+
+.portfolio-card {
+  padding: 50px 40px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  transition: background 0.5s, transform 0.5s var(--ease-quiet);
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.portfolio-card:nth-child(3n) { border-right: none; }
+.portfolio-card:nth-last-child(-n+3) { border-bottom: none; }
+@media (max-width: 1024px) {
+  .portfolio-card:nth-child(3n) { border-right: 1px solid var(--line); }
+  .portfolio-card:nth-child(2n) { border-right: none; }
+}
+@media (max-width: 600px) {
+  .portfolio-card:nth-child(2n) { border-right: 1px solid var(--line); }
+  .portfolio-card:last-child { border-right: none; }
+  .portfolio-card:nth-last-child(-n+1) { border-bottom: none; }
+}
+.portfolio-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: var(--grad-mesh);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.portfolio-card:hover::before { opacity: 1; }
+.portfolio-card:hover { background: var(--paper-2); transform: translateY(-4px); }
+
+.portfolio-card-num {
+  font-family: 'Instrument Serif', serif;
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  -webkit-text-stroke: 1px var(--ink-faint);
+  color: transparent;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  transition: color 0.4s, -webkit-text-stroke-color 0.4s;
+}
+.portfolio-card:hover .portfolio-card-num {
+  color: var(--blue);
+  -webkit-text-stroke-color: var(--blue);
+}
+.portfolio-card-title {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+.portfolio-card-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+/* Portfolio Image */
+.portfolio-card-image{
+    width:100%;
+    height:130px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:25px;
+    position:relative;
+    z-index:1;
+    transition:transform .4s ease;
+}
+
+.portfolio-card:hover .portfolio-card-image{
+    transform:scale(1.05);
+}
+
+/* ===================== MISSION VISION ===================== */
+.mission-vision { background: var(--bg-soft); }
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+@media (max-width: 768px) { .mv-grid { grid-template-columns: 1fr; } }
+
+.mv-card {
+  padding: 80px 60px;
+  border-right: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+}
+.mv-card:last-child { border-right: none; }
+@media (max-width: 768px) {
+  .mv-card { border-right: none; border-bottom: 1px solid var(--line); }
+  .mv-card:last-child { border-bottom: none; }
+}
+.mv-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 4px;
+}
+.mv-card.mission::before { background: var(--grad-2); }
+.mv-card.vision::before { background: var(--grad-3); }
+
+.mv-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  display: flex; align-items: center; gap: 10px;
+}
+.mv-label i { font-size: 14px; }
+.mv-card.mission .mv-label i { color: var(--green); }
+.mv-card.vision .mv-label i { color: var(--violet); }
+
+.mv-text {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(22px, 2.4vw, 32px);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--ink-soft);
+}
+.mv-card.mission .mv-text em { color: var(--green); font-style: italic; }
+.mv-card.vision .mv-text em { color: var(--violet); font-style: italic; }
+
+/* ===================== STATS BAND ===================== */
+.stats-band {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 10rem 0;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+@media (max-width: 900px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+.stat-item {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 30px;
+}
+.stat-num {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(60px, 7vw, 120px);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+.stat-num-suffix {
+  font-size: 0.5em;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-left: 4px;
+}
+.stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+/* ===================== CONTACT ===================== */
+.contact { background: var(--bg); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 1024px) { .contact-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+.contact-aside {
+  position: sticky;
+  top: 100px;
+}
+.contact-aside h2 { margin-bottom: 30px; }
+.contact-info-list {
+  display: flex; flex-direction: column; gap: 0;
+  margin-top: 40px;
+  border-top: 1px solid var(--line);
+}
+.contact-info-item {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+.contact-info-icon {
+  width: 40px; height: 40px;
+  border-radius: 8px;
+  background: var(--blue-tint);
+  color: var(--blue);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+}
+.contact-info-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.contact-info-value {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+}
+.contact-info-value a {
+  transition: color 0.3s;
+}
+.contact-info-value a:hover { color: var(--blue); }
+
+.contact-socials {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.contact-socials-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.contact-socials-grid {
+  display: flex; gap: 12px; flex-wrap: wrap;
+}
+.contact-social-link {
+  width: 44px; height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  font-size: 16px;
+  color: var(--ink-soft);
+  transition: background 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+}
+.contact-social-link:hover {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+  transform: translateY(-3px);
+}
+
+.contact-form-wrap {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 60px;
+}
+@media (max-width: 768px) { .contact-form-wrap { padding: 30px; } }
+
+.contact-form-head {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--line);
+}
+.contact-form-title {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+.contact-form-sub {
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+.form-group { margin-bottom: 20px; }
+.form-label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.3s;
+}
+.form-input:focus, .form-textarea:focus, .form-select:focus { border-color: var(--ink); }
+.form-textarea { resize: vertical; min-height: 100px; }
+.form-select { cursor: pointer; }
+
+.btn-submit {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  padding: 18px 40px;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 100px;
+  transition: transform 0.4s var(--ease-quiet), background 0.4s;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  width: 100%;
+}
+.btn-submit::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--grad-1);
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: 0;
+}
+.btn-submit:hover::before { opacity: 1; }
+.btn-submit span, .btn-submit i { position: relative; z-index: 1; }
+.btn-submit:hover { transform: translateY(-3px); }
+
+/* ===================== FOOTER ===================== */
+.footer {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 6rem 0 3rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+@media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .footer-grid { grid-template-columns: 1fr; } }
+
+.footer-brand-name {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+}
+.footer-brand-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.55;
+  max-width: 36ch;
+  margin-bottom: 24px;
+}
+.footer-socials {
+  display: flex; gap: 10px;
+}
+.footer-social-link {
+  width: 38px; height: 38px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+.footer-social-link:hover {
+  background: var(--bg);
+  color: var(--ink);
+  border-color: var(--bg);
+}
+
+.footer-col-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.footer-links {
+  display: flex; flex-direction: column; gap: 14px;
+}
+.footer-link {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.3s;
+}
+.footer-link:hover { color: var(--bg); }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-copy {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.35);
+}
+.footer-bottom-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.35);
+  transition: color 0.3s;
+}
+.footer-bottom-link:hover { color: var(--bg); }
+
+/* ===================== ANIMATIONS ===================== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s var(--ease-quiet), transform 0.8s var(--ease-quiet);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Normal arrow everywhere */
+body {
+    cursor: default;
+}
+
+/* Custom hand cursor only for clickable items */
+a,
+button,
+input[type="submit"],
+input[type="button"] {
+    cursor: url("cursor_PNG45_32.png") 0 0, pointer;
+}
+
+/* Text cursor for text fields */
+input,
+textarea {
+    cursor: text;
+    
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<!-- CURSOR -->
+
+
+<!-- PRELOADER -->
+<div class="preloader">
+  <div class="preloader-mark"></div>
+  <div class="preloader-text">Quadra Froyn</div>
+  <div class="preloader-bar"></div>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <a href="#hero" class="mobile-menu-link">Home</a>
+  <a href="#about" class="mobile-menu-link">About</a>
+  <a href="#services" class="mobile-menu-link">Services</a>
+  <a href="#portfolio" class="mobile-menu-link">Portfolio</a>
+  <a href="#internships" class="mobile-menu-link">Internships</a>
+  <a href="#contact" class="mobile-menu-link">Contact</a>
+</div>
+
+<!-- NAV -->
+ <nav class="nav">
+  <a href="#hero" class="nav-logo">
+
+    <img src="logo (2).jpg" alt="Quadra Froyn Logo" class="logo-img">
+
+    <div class="nav-logo-text">
+      <span>Quadra Froyn</span>
+      <span>Solutions & Technologies</span>
+    </div>
+
+  </a>
+
+  <div class="nav-links">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#portfolio" class="nav-link">Portfolio</a>
+    <a href="#internships" class="nav-link">Internships</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+
+  <a href="#contact" class="nav-cta">
+    Get in Touch <i class="fas fa-arrow-right"></i>
+  </a>
+
+  <button class="nav-toggle" aria-label="Menu">
+    <span></span>
+  </button>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="hero">
+  <div class="container-wide">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <div class="hero-meta-dot"></div>
+            Now Accepting Projects
+          </div>
+          <div class="hero-meta-item">Srivilliputhur, Tamil Nadu</div>
+        </div>
+        <h1 class="hero-title h-display">
+          <span class="hero-title-line"><span>Innovating</span></span>
+          <span class="hero-title-line"><span>Today.<em class="serif-italic"> Empowering</em></span></span>
+          <span class="hero-title-line"><span>Tomorrow.</span></span>
+        </h1>
+        <p class="hero-desc">Building intelligent software, AI-powered solutions, modern websites, and shaping future professionals through technology, innovation, and education.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn-primary">
+            <span>Explore Services</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <span>Contact Us</span>
+            <div class="btn-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-visual-frame">
+          <div class="corner bl"></div>
+          <div class="corner br"></div>
+        </div>
+        <div class="hero-label">Generative Geometry · Real-time</div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat-item">
+        <div class="hero-stat-num grad-text">10+</div>
+        <div class="hero-stat-label">Services Offered</div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="hero-stat-num grad-text">50+</div>
+        <div class="hero-stat-label">Projects Delivered</div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="hero-stat-num grad-text">200+</div>
+        <div class="hero-stat-label">Students Trained</div>
+      </div>
+      <div class="hero-stat-item">
+        <div class="hero-stat-num grad-text">100%</div>
+        <div class="hero-stat-label">Client Satisfaction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== MARQUEE ==================== -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item">Artificial Intelligence</span>
+    <span class="marquee-item">Data Analytics</span>
+    <span class="marquee-item">Web Development</span>
+    <span class="marquee-item">Custom Software</span>
+    <span class="marquee-item">Student Training</span>
+    <span class="marquee-item">Career Guidance</span>
+    <span class="marquee-item">Business Solutions</span>
+    <span class="marquee-item">Digital Innovation</span>
+    <span class="marquee-item">Artificial Intelligence</span>
+    <span class="marquee-item">Data Analytics</span>
+    <span class="marquee-item">Web Development</span>
+    <span class="marquee-item">Custom Software</span>
+    <span class="marquee-item">Student Training</span>
+    <span class="marquee-item">Career Guidance</span>
+    <span class="marquee-item">Business Solutions</span>
+    <span class="marquee-item">Digital Innovation</span>
+  </div>
+</div>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="manifesto" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head-title">
+        <span class="eyebrow">Who We Are</span>
+        <h2 class="h-section" style="margin-top:20px;">About <em class="serif-italic">Us</em></h2>
+      </div>
+      <div class="section-head-aside">
+        <p class="lead">Founded by a team of passionate innovators, Quadra Froyn Solutions and Technologies is a startup dedicated to building intelligent digital solutions.</p>
+      </div>
+    </div>
+    <div class="manifesto-grid">
+      <div class="manifesto-aside reveal">
+        <p class="lead" style="margin-bottom: 30px;">We bridge the gap between <em class="serif-italic">education</em> and <em class="serif-italic">industry</em>.</p>
+        <div class="manifesto-foot">
+          <div class="manifesto-signature">
+            Quadra Froyn
+            <small>Est. 2026 · Tamil Nadu, India</small>
+          </div>
+        </div>
+      </div>
+      <div class="manifesto-text reveal">
+        <span class="reveal-word">We </span>
+        <span class="reveal-word">specialize </span>
+        <span class="reveal-word">in </span>
+        <span class="reveal-word">developing </span>
+        <em class="reveal-word">AI-powered </em>
+        <span class="reveal-word">applications, </span>
+        <em class="reveal-word accent-violet">data analytics </em>
+        <span class="reveal-word">solutions, </span>
+        <span class="reveal-word">custom </span>
+        <span class="reveal-word">software, </span>
+        <span class="reveal-word">and </span>
+        <span class="reveal-word">modern </span>
+        <span class="reveal-word">websites </span>
+        <span class="reveal-word">for </span>
+        <span class="reveal-word">businesses. </span>
+        <span class="reveal-word">Alongside </span>
+        <span class="reveal-word">our </span>
+        <span class="reveal-word">development </span>
+        <span class="reveal-word">services, </span>
+        <span class="reveal-word">we </span>
+        <span class="reveal-word">conduct </span>
+        <em class="reveal-word accent-green">technology awareness </em>
+        <span class="reveal-word">sessions, </span>
+        <em class="reveal-word accent-orange">career guidance </em>
+        <span class="reveal-word">programs, </span>
+        <span class="reveal-word">workshops, </span>
+        <span class="reveal-word">and </span>
+        <span class="reveal-word">hands-on </span>
+        <span class="reveal-word">training </span>
+        <span class="reveal-word">for </span>
+        <span class="reveal-word">schools </span>
+        <span class="reveal-word">and </span>
+        <span class="reveal-word">colleges. </span>
+        <span class="reveal-word">Our </span>
+        <span class="reveal-word">mission </span>
+        <span class="reveal-word">is </span>
+        <span class="reveal-word">to </span>
+        <span class="reveal-word">help </span>
+        <span class="reveal-word">students </span>
+        <span class="reveal-word">gain </span>
+        <em class="reveal-word">practical skills </em>
+        <span class="reveal-word">while </span>
+        <span class="reveal-word">delivering </span>
+        <span class="reveal-word">high-quality </span>
+        <span class="reveal-word">technology </span>
+        <span class="reveal-word">solutions </span>
+        <span class="reveal-word">to </span>
+        <span class="reveal-word">clients.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== MISSION & VISION ==================== -->
+<section class="mission-vision">
+  <div class="container">
+    <div class="mv-grid reveal">
+      <div class="mv-card mission">
+        <div class="mv-label"><i class="fas fa-bullseye"></i> Mission</div>
+        <p class="mv-text">To empower businesses and students through <em>innovative technology</em>, practical learning, and intelligent digital solutions.</p>
+      </div>
+      <div class="mv-card vision">
+        <div class="mv-label"><i class="fas fa-eye"></i> Vision</div>
+        <p class="mv-text">To become one of Tamil Nadu's most trusted technology startups, delivering <em>impactful software solutions</em> while shaping the future workforce through quality training and mentorship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SERVICES ==================== -->
+<section class="domains" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head-title">
+        <span class="eyebrow">What We Offer</span>
+        <h2 class="h-section" style="margin-top:20px;">Our <em class="serif-italic">Services</em></h2>
+      </div>
+      <div class="section-head-aside">
+        <p class="lead">From AI-powered applications to hands-on student training — we deliver end-to-end technology solutions.</p>
+      </div>
+    </div>
+    <div class="domains-grid reveal">
+
+      <div class="domain-card">
+        <div class="domain-num">01</div>
+        <div class="domain-icon" style="color:var(--blue);background:var(--blue-tint);"><i class="fas fa-brain"></i></div>
+        <h3 class="domain-title">Artificial Intelligence Solutions</h3>
+        <p class="domain-desc">Custom AI models, machine learning pipelines, NLP systems, and intelligent automation for businesses of all sizes.</p>
+        <div class="domain-meta">
+          <span class="domain-meta-item">ML</span>
+          <span class="domain-meta-item">NLP</span>
+          <span class="domain-meta-item">Deep Learning</span>
+        </div>
+        <div class="domain-cta">Learn More <i class="fas fa-arrow-right" style="font-size:11px;"></i></div>
+      </div>
+
+      <div class="domain-card">
+        <div class="domain-num">02</div>
+        <div class="domain-icon" style="color:var(--green);background:var(--green-tint);"><i class="fas fa-chart-line"></i></div>
+        <h3 class="domain-title">Data Analytics & BI</h3>
+        <p class="domain-desc">Transform raw data into actionable insights with interactive dashboards, reporting systems, and business intelligence solutions.</p>
+        <div class="domain-meta">
+          <span class="domain-meta-item">Dashboards</span>
+          <span class="domain-meta-item">Visualization</span>
+        </div>
+        <div class="domain-cta">Learn More <i class="fas fa-arrow-right" style="font-size:11px;"></i></div>
+      </div>
+
+      <div class="domain-card">
+        <div class="domain-num">03</div>
+        <div class="domain-icon" style="color:var(--violet);background:var(--violet-tint);"><i class="fas fa-globe"></i></div>
+        <h3 class="domain-title">Website Design & Development</h3>
+        <p class="domain-desc">Modern, responsive, and high-performance websites for shops, startups, and businesses — from landing pages to full web applications.</p>
+        <div class="domain-meta">
+          <span class="domain-meta-item">Responsive</span>
+          <span class="domain-meta-item">SEO</span>
+        </div>
+        <div class="domain-cta">Learn More <i class="fas fa-arrow-right" style="font-size:11px;"></i></div>
+      </div>
+
+      <div class="domain-card">
+        <div class="domain-num">04</div>
+        <div class="domain-icon" style="color:var(--orange);background:var(--orange-tint);"><i class="fas fa-code"></i></div>
+        <h3 class="domain-title">Custom Software Development</h3>
+        <p class="domain-desc">Tailored software solutions built from scratch to meet your specific business requirements, workflows, and operational needs.</p>
+        <div class="domain-meta">
+          <span class="domain-meta-item">Desktop</span>
+          <span class="domain-meta-item">Enterprise</span>
+        </div>
+        <div class="domain-cta">Learn More <i class="fas fa-arrow-right" style="font-size:11px;"></i></div>
+      </div>
+
+      <div class="domain-card">
+        <div class="domain-num">05</div>
+        <div class="domain-icon" style="color:var(--blue);background:var(--blue-tint);"><i class="fas fa-briefcase"></i></div>
+        <h3 class="domain-title">Client-Based Projects</h3>
+        <p class="domain-desc">End-to-end project execution for clients — from ideation and design to development, testing, and deployment with ongoing support.</p>
+        <div class="domain-meta">
+          <span class="domain-meta-item">Full Stack</span>
+          <span class="domain-meta-item">Support</span>
+        </div>
+        <div class="domain-cta">Learn More <i class="fas fa-arrow-right" style="font-size:11px;"></i></div>
+      </div>
+
+      <div class="domain-card">
+        <div class="domain-num">06</div>
+        <div class="domain-icon" style="color:var(--green);background:var(--green-tint);"><i class="fas fa-graduation-cap"></i></div>
+        <h3 class="domain-title">Final Year Academic Projects</h3>
+        <p class="domain-desc">Guiding engineering students across Tamil Nadu with innovative, industry-relevant final year project ideas and implementation support.</p>
+        <div class="domain-meta">
+          <span class="domain-meta-item">Engineering</span>
+          <span class="domain-meta-item">Innovation</span>
+        </div>
+        <div class="domain-cta">Learn More <i class="fas fa-arrow-right" style="font-size:11px;"></i></div>
+      </div>
+
+      <div class="domain-card">
+        <div class="domain-num">07</div>
+        <div class="domain-icon" style="color:var(--violet);background:var(--violet-tint);"><i class="fas fa-chalkboard-teacher"></i></div>
+        <h3 class="domain-title">Technology Webinars</h3>
+        <p class="domain-desc">Engaging Webinars and workshops conducted in schools and colleges to create technology awareness and inspire the next generation.</p>
+        <div class="domain-meta">
+          <span class="domain-meta-item">Schools</span>
+          <span class="domain-meta-item">Colleges</span>
+        </div>
+        <div class="domain-cta">Learn More <i class="fas fa-arrow-right" style="font-size:11px;"></i></div>
+      </div>
+
+      <div class="domain-card">
+        <div class="domain-num">08</div>
+        <div class="domain-icon" style="color:var(--orange);background:var(--orange-tint);"><i class="fas fa-compass"></i></div>
+        <h3 class="domain-title">Career Guidance & Consulting</h3>
+        <p class="domain-desc">Technical consulting for businesses and educational institutions, plus career guidance to help students navigate the tech industry.</p>
+        <div class="domain-meta">
+          <span class="domain-meta-item">Consulting</span>
+          <span class="domain-meta-item">Mentorship</span>
+        </div>
+        <div class="domain-cta">Learn More <i class="fas fa-arrow-right" style="font-size:11px;"></i></div>
+      </div>
+
+      <div class="domain-card">
+        <div class="domain-num">09</div>
+        <div class="domain-icon" style="color:var(--blue);background:var(--blue-tint);"><i class="fas fa-users"></i></div>
+        <h3 class="domain-title">Internship & Training Programs</h3>
+        <p class="domain-desc">Industry-oriented internship programs with hands-on training in AI, data analytics, web development, and Python programming.</p>
+        <div class="domain-meta">
+          <span class="domain-meta-item">Internship</span>
+          <span class="domain-meta-item">Hands-on</span>
+        </div>
+        <div class="domain-cta">Learn More <i class="fas fa-arrow-right" style="font-size:11px;"></i></div>
+      </div>
+
+      <div class="domain-card" style="border-right:none;">
+        <div class="domain-num">10</div>
+        <div class="domain-icon" style="color:var(--green);background:var(--green-tint);"><i class="fas fa-rocket"></i></div>
+        <h3 class="domain-title">Digital Business Solutions</h3>
+        <p class="domain-desc">Comprehensive digital transformation solutions — from online presence setup to automation tools that help businesses scale efficiently.</p>
+        <div class="domain-meta">
+          <span class="domain-meta-item">Digital</span>
+          <span class="domain-meta-item">Automation</span>
+        </div>
+        <div class="domain-cta">Learn More <i class="fas fa-arrow-right" style="font-size:11px;"></i></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHAT WE DO ==================== -->
+<section class="whatwedo">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head-title">
+        <span class="eyebrow">In Detail</span>
+        <h2 class="h-section" style="margin-top:20px;">What We <em class="serif-italic">Do</em></h2>
+      </div>
+      <div class="section-head-aside">
+        <p class="lead">A closer look at our day-to-day operations — from building AI systems to training the next generation.</p>
+      </div>
+    </div>
+    <div class="whatwedo-grid reveal">
+      <div class="whatwedo-item">
+        <span class="whatwedo-num">01</span>
+        <span class="whatwedo-text">Develop AI and Data Analytics projects for businesses and research purposes</span>
+      </div>
+      <div class="whatwedo-item">
+        <span class="whatwedo-num">02</span>
+        <span class="whatwedo-text">Create modern websites for shops, startups, and established businesses</span>
+      </div>
+      <div class="whatwedo-item">
+        <span class="whatwedo-num">03</span>
+        <span class="whatwedo-text">Build customized software solutions based on specific client requirements</span>
+      </div>
+      <div class="whatwedo-item">
+        <span class="whatwedo-num">04</span>
+        <span class="whatwedo-text">Deliver innovative project ideas tailored to client needs and industry trends</span>
+      </div>
+      <div class="whatwedo-item">
+        <span class="whatwedo-num">05</span>
+        <span class="whatwedo-text">Guide engineering students with final-year projects across Tamil Nadu</span>
+      </div>
+      <div class="whatwedo-item">
+        <span class="whatwedo-num">06</span>
+        <span class="whatwedo-text">Conduct technology Webinars and workshops in schools and colleges</span>
+      </div>
+      <div class="whatwedo-item">
+        <span class="whatwedo-num">07</span>
+        <span class="whatwedo-text">Train students with industry-oriented technical skills and real-world projects</span>
+      </div>
+      <div class="whatwedo-item">
+        <span class="whatwedo-num">08</span>
+        <span class="whatwedo-text">Provide technology consulting for businesses and educational institutions</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHY CHOOSE US ==================== -->
+<section class="whyus">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head-title">
+        <span class="eyebrow">Our Edge</span>
+        <h2 class="h-section" style="margin-top:20px;">Why Choose <em class="serif-italic">Us</em></h2>
+      </div>
+      <div class="section-head-aside">
+        <p class="lead">We combine technical excellence with a student-first approach — a rare combination in the industry.</p>
+      </div>
+    </div>
+    <div class="whyus-grid reveal">
+      <div class="whyus-card">
+        <div class="whyus-icon"><i class="fas fa-industry"></i></div>
+        <h3 class="whyus-title">Industry-Focused Solutions</h3>
+      </div>
+      <div class="whyus-card">
+        <div class="whyus-icon"><i class="fas fa-tags"></i></div>
+        <h3 class="whyus-title">Affordable Pricing</h3>
+      </div>
+      <div class="whyus-card">
+        <div class="whyus-icon"><i class="fas fa-microchip"></i></div>
+        <h3 class="whyus-title">Modern Technologies</h3>
+      </div>
+      <div class="whyus-card">
+        <div class="whyus-icon"><i class="fas fa-headset"></i></div>
+        <h3 class="whyus-title">Personalized Client Support</h3>
+      </div>
+      <div class="whyus-card">
+        <div class="whyus-icon"><i class="fas fa-user-tie"></i></div>
+        <h3 class="whyus-title">Experienced Technical Guidance</h3>
+      </div>
+      <div class="whyus-card">
+        <div class="whyus-icon"><i class="fas fa-heart"></i></div>
+        <h3 class="whyus-title">Student-Friendly Approach</h3>
+      </div>
+      <div class="whyus-card">
+        <div class="whyus-icon"><i class="fas fa-lightbulb"></i></div>
+        <h3 class="whyus-title">Innovative & Scalable Solutions</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PORTFOLIO ==================== -->
+<div class="portfolio-grid reveal">
+
+    <div class="portfolio-card">
+        <img src="ai1.jpg" class="portfolio-img" alt="AI Applications">
+        <div class="portfolio-content">
+            <div class="portfolio-card-num">01</div>
+            <h3 class="portfolio-card-title">AI Applications</h3>
+            <span class="portfolio-card-tag">Machine Learning · NLP · Computer Vision</span>
+        </div>
+    </div>
+
+    <div class="portfolio-card">
+        <img src="data.jpg" class="portfolio-img" alt="Data Analytics">
+        <div class="portfolio-content">
+            <div class="portfolio-card-num">02</div>
+            <h3 class="portfolio-card-title">Data Analytics Dashboards</h3>
+            <span class="portfolio-card-tag">Visualization · BI · Reporting</span>
+        </div>
+    </div>
+
+    <div class="portfolio-card">
+        <img src="website1.jpg" class="portfolio-img" alt="Website">
+        <div class="portfolio-content">
+            <div class="portfolio-card-num">03</div>
+            <h3 class="portfolio-card-title">Business Websites</h3>
+            <span class="portfolio-card-tag">Responsive · E-commerce · SEO</span>
+        </div>
+    </div>
+
+    <div class="portfolio-card">
+        <img src="project1.jpg" class="portfolio-img" alt="College Project">
+        <div class="portfolio-content">
+            <div class="portfolio-card-num">04</div>
+            <h3 class="portfolio-card-title">College Projects</h3>
+            <span class="portfolio-card-tag">Final Year · Research · Innovation</span>
+        </div>
+    </div>
+
+    <div class="portfolio-card">
+        <img src="software1.jpg" class="portfolio-img" alt="Software">
+        <div class="portfolio-content">
+            <div class="portfolio-card-num">05</div>
+            <h3 class="portfolio-card-title">Client Software Solutions</h3>
+            <span class="portfolio-card-tag">Custom · Enterprise · Automation</span>
+        </div>
+    </div>
+
+    <div class="portfolio-card">
+        <img src="webapp1.jpg" class="portfolio-img" alt="Web App">
+        <div class="portfolio-content">
+            <div class="portfolio-card-num">06</div>
+            <h3 class="portfolio-card-title">Custom Web Applications</h3>
+            <span class="portfolio-card-tag">Full Stack · SaaS · Progressive</span>
+        </div>
+    </div>
+
+</div>
+<!-- ==================== INTERNSHIP & TRAINING ==================== -->
+<section class="internship-section" id="internships">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head-title">
+        <span class="eyebrow">Learn & Grow</span>
+        <h2 class="h-section" style="margin-top:20px;">Internship & <em class="serif-italic">Training</em></h2>
+      </div>
+      <div class="section-head-aside">
+        <p class="lead">We believe every student deserves industry-ready skills. Our programs are designed to bridge the gap between classroom learning and real-world execution.</p>
+      </div>
+    </div>
+    <div class="internship-grid">
+      <div class="internship-aside reveal">
+        <h2 class="h-sub">Programs We <em class="serif-italic">Offer</em></h2>
+        <div class="internship-list">
+          <div class="internship-list-item">
+            <div class="internship-list-icon"><i class="fas fa-brain"></i></div>
+            <div>
+              <div class="internship-list-title">Artificial Intelligence</div>
+              <div class="internship-list-desc">ML, Deep Learning, NLP, and real-world AI project building</div>
+            </div>
+          </div>
+          <div class="internship-list-item">
+            <div class="internship-list-icon"><i class="fas fa-chart-bar"></i></div>
+            <div>
+              <div class="internship-list-title">Data Analytics</div>
+              <div class="internship-list-desc">Data wrangling, visualization, dashboards, and BI tools</div>
+            </div>
+          </div>
+          <div class="internship-list-item">
+            <div class="internship-list-icon"><i class="fas fa-code"></i></div>
+            <div>
+              <div class="internship-list-title">Web Development</div>
+              <div class="internship-list-desc">Frontend, backend, databases, and full-stack applications</div>
+            </div>
+          </div>
+          <div class="internship-list-item">
+            <div class="internship-list-icon"><i class="fab fa-python"></i></div>
+            <div>
+              <div class="internship-list-title">Python Programming</div>
+              <div class="internship-list-desc">Core Python, libraries, automation, and scripting</div>
+            </div>
+          </div>
+          <div class="internship-list-item">
+            <div class="internship-list-icon"><i class="fas fa-project-diagram"></i></div>
+            <div>
+              <div class="internship-list-title">Project Development</div>
+              <div class="internship-list-desc">End-to-end project lifecycle from ideation to deployment</div>
+            </div>
+          </div>
+          <div class="internship-list-item">
+            <div class="internship-list-icon"><i class="fas fa-briefcase"></i></div>
+            <div>
+              <div class="internship-list-title">Career Preparation</div>
+              <div class="internship-list-desc">Resume building, portfolio creation, interview readiness</div>
+            </div>
+          </div>
+          <div class="internship-list-item">
+            <div class="internship-list-icon"><i class="fas fa-user-graduate"></i></div>
+            <div>
+              <div class="internship-list-title">Industry Mentorship</div>
+              <div class="internship-list-desc">One-on-one guidance from experienced professionals</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="internship-highlight reveal">
+        <p class="internship-highlight-quote">"Every student deserves <em>industry-ready skills</em> — not just textbook knowledge."</p>
+        <p class="internship-highlight-desc">Our internship and training programs are carefully structured to give students hands-on experience with modern tools and technologies. We focus on practical learning, real projects, and career readiness — ensuring every participant walks out prepared for the industry.</p>
+        <div class="internship-tags">
+          <span class="internship-tag">AI & ML</span>
+          <span class="internship-tag">Data Analytics</span>
+          <span class="internship-tag">Web Development</span>
+          <span class="internship-tag">Python</span>
+          <span class="internship-tag">Project Building</span>
+          <span class="internship-tag">Resume & Portfolio</span>
+          <span class="internship-tag">Career Prep</span>
+          <span class="internship-tag">Mentorship</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head-title">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 class="h-section" style="margin-top:20px;">Contact <em class="serif-italic">Us</em></h2>
+      </div>
+      <div class="section-head-aside">
+        <p class="lead">Have a project in mind or want to join our training programs? We'd love to hear from you.</p>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-aside reveal">
+        <h2 class="h-sub">Let's Build <em class="serif-italic">Together</em></h2>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value"><a href="mailto:quadrafroyn@gmail.com">quadrafroyn@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value"><a href="tel:+918667662960,8870141195">8667662960,8870141195</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-info-label">Office</div>
+              <div class="contact-info-value">Srivilliputhur, Virudhunagar District,<br>Tamil Nadu, India</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="contact-form-wrap reveal">
+        <div class="contact-form-head">
+          <h3 class="contact-form-title">Send a Message</h3>
+          <p class="contact-form-sub">Fill out the form below and we'll get back to you within 24 hours.</p>
+        </div>
+        <form id="contactForm" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-input" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-input" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Subject</label>
+              <select class="form-select">
+                <option value="">Select a topic</option>
+                <option>Project Inquiry</option>
+                <option>Internship / Training</option>
+                <option>Final Year Project</option>
+                <option>Webinar / Workshop</option>
+                <option>Career Guidance</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" placeholder="Tell us about your project or inquiry..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span>Send Message</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Quadra Froyn Solutions and Technologies</div>
+        <p class="footer-brand-desc">Building intelligent digital solutions and empowering the next generation through technology, innovation, and practical learning.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/quadrafroynsolutions" class="footer-social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/quadrafroyn2026" class="footer-social-link" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/quadrafroyn_/" class="footer-social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+          
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=quadrafroyn@gmail.com"
+   target="_blank"
+   class="footer-social-link"
+   title="Gmail">
+    <i class="fab fa-google"></i>
+</a><a href="https://www.youtube.com/@QuadraFroynSolutions" class="footer-social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-links">
+          <a href="#about" class="footer-link">About Us</a>
+          <a href="#services" class="footer-link">Services</a>
+          <a href="#portfolio" class="footer-link">Portfolio</a>
+          <a href="#internships" class="footer-link">Internships</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <div class="footer-links">
+          <a href="#services" class="footer-link">AI Solutions</a>
+          <a href="#services" class="footer-link">Data Analytics</a>
+          <a href="#services" class="footer-link">Web Development</a>
+          <a href="#services" class="footer-link">Custom Software</a>
+          <a href="#services" class="footer-link">Digital Solutions</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-links">
+          <a href="mailto:quadrafroyn@gmail.com" class="footer-link">quadrafroyn@gmail.com</a>
+          <a href="tel:+918667662960" class="footer-link">8667662960</a>
+          <span class="footer-link" style="cursor:default;">Srivilliputhur,</span>
+          <span class="footer-link" style="cursor:default;">Tamil Nadu, India</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Quadra Froyn Solutions and Technologies. All rights reserved.</span>
+      <a href="#hero" class="footer-bottom-link">Back to Top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== JAVASCRIPT ==================== -->
+<script>
+(function() {
+  'use strict';
+
+  // ---- PRELOADER ----
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.querySelector('.preloader').classList.add('done');
+      // Trigger hero text animation
+      document.querySelectorAll('.hero-title-line').forEach((line, i) => {
+        setTimeout(() => line.classList.add('in'), 200 + i * 150);
+      });
+    }, 2600);
+  });
+
+  // ---- CUSTOM CURSOR ----
+
+  
+ 
+
+
+
+  // ---- NAV SCROLL ----
+  const nav = document.querySelector('.nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // ---- MOBILE MENU ----
+  const toggle = document.querySelector('.nav-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  let menuOpen = false;
+
+  toggle.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle('open', menuOpen);
+    toggle.children[0].style.transform = menuOpen ? 'rotate(45deg)' : '';
+    if (menuOpen) {
+      toggle.children[0].style.transform = 'rotate(45deg)';
+      toggle.children[0].querySelector('::before')
+    }
+  });
+
+  document.querySelectorAll('.mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menuOpen = false;
+      mobileMenu.classList.remove('open');
+    });
+  });
+
+  // ---- SMOOTH SCROLL ----
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        const y = target.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ---- REVEAL ON SCROLL ----
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  // ---- MANIFESTO WORD REVEAL ----
+  const manifestoWords = document.querySelectorAll('.manifesto-text .reveal-word');
+  if (manifestoWords.length) {
+    const wordObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const words = entry.target.querySelectorAll('.reveal-word');
+          words.forEach((w, i) => {
+            setTimeout(() => w.classList.add('lit'), i * 40);
+          });
+          wordObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    wordObserver.observe(document.querySelector('.manifesto-text'));
+  }
+
+  // ---- HERO CANVAS (Generative Geometry) ----
+  const canvas = document.getElementById('hero-canvas');
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
+    let cw, ch, time = 0;
+    const nodes = [];
+    const NODE_COUNT = 60;
+
+    function resize() {
+      const rect = canvas.parentElement.getBoundingClientRect();
+      cw = canvas.width = rect.width * window.devicePixelRatio;
+      ch = canvas.height = rect.height * window.devicePixelRatio;
+      canvas.style.width = rect.width + 'px';
+      canvas.style.height = rect.height + 'px';
+      ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+    }
+
+    function initNodes() {
+      nodes.length = 0;
+      const w = cw / window.devicePixelRatio;
+      const h = ch / window.devicePixelRatio;
+      for (let i = 0; i < NODE_COUNT; i++) {
+        nodes.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          vx: (Math.random() - 0.5) * 0.6,
+          vy: (Math.random() - 0.5) * 0.6,
+          r: Math.random() * 2.5 + 1,
+          color: ['#1e3aff', '#7c3aed', '#00b87a', '#ff5a1f'][Math.floor(Math.random() * 4)]
+        });
+      }
+    }
+
+    function draw() {
+      const w = cw / window.devicePixelRatio;
+      const h = ch / window.devicePixelRatio;
+      ctx.clearRect(0, 0, w, h);
+      time += 0.005;
+
+      // Update & draw nodes
+      for (let i = 0; i < nodes.length; i++) {
+        const n = nodes[i];
+        n.x += n.vx;
+        n.y += n.vy;
+        if (n.x < 0 || n.x > w) n.vx *= -1;
+        if (n.y < 0 || n.y > h) n.vy *= -1;
+
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+        ctx.fillStyle = n.color;
+        ctx.globalAlpha = 0.6;
+        ctx.fill();
+      }
+
+      // Draw connections
+      ctx.globalAlpha = 1;
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const dx = nodes[i].x - nodes[j].x;
+          const dy = nodes[i].y - nodes[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            ctx.beginPath();
+            ctx.moveTo(nodes[i].x, nodes[i].y);
+            ctx.lineTo(nodes[j].x, nodes[j].y);
+            ctx.strokeStyle = `rgba(10,10,10,${0.08 * (1 - dist / 120)})`;
+            ctx.lineWidth = 0.8;
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Draw floating geometric shapes
+      ctx.globalAlpha = 0.06;
+      for (let i = 0; i < 5; i++) {
+        const cx = w * 0.5 + Math.sin(time + i * 1.3) * w * 0.25;
+        const cy = h * 0.5 + Math.cos(time * 0.7 + i * 0.9) * h * 0.25;
+        const size = 40 + i * 20;
+        ctx.save();
+        ctx.translate(cx, cy);
+        ctx.rotate(time * 0.3 + i);
+        ctx.strokeStyle = ['#1e3aff', '#7c3aed', '#00b87a', '#ff5a1f', '#0a0a0a'][i];
+        ctx.lineWidth = 1.2;
+        if (i % 3 === 0) {
+          ctx.strokeRect(-size / 2, -size / 2, size, size);
+        } else if (i % 3 === 1) {
+          ctx.beginPath();
+          ctx.arc(0, 0, size / 2, 0, Math.PI * 2);
+          ctx.stroke();
+        } else {
+          ctx.beginPath();
+          for (let s = 0; s < 3; s++) {
+            const angle = (s / 3) * Math.PI * 2 - Math.PI / 2;
+            const px = Math.cos(angle) * size / 2;
+            const py = Math.sin(angle) * size / 2;
+            s === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+          }
+          ctx.closePath();
+          ctx.stroke();
+        }
+        ctx.restore();
+      }
+      ctx.globalAlpha = 1;
+
+      requestAnimationFrame(draw);
+    }
+
+    resize();
+    initNodes();
+    draw();
+    window.addEventListener('resize', () => { resize(); initNodes(); });
+  }
+
+  // ---- CONTACT FORM (basic) ----
+  const form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = form.querySelector('.btn-submit');
+      const origHTML = btn.innerHTML;
+      btn.innerHTML = '<span>Message Sent!</span><i class="fas fa-check"></i>';
+      btn.style.background = 'var(--green)';
+      setTimeout(() => {
+        btn.innerHTML = origHTML;
+        btn.style.background = '';
+        form.reset();
+      }, 3000);
+    });
+  }
+
+})();
+</script>
+</body>
+</html>
